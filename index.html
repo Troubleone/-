@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>香樟林工作室</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="header">
+		    <img src="img/header_logo.png" alt="logo" class="header_logo">
+		    <nav class="main_nav">
+		    	<li><a href="#">关于我们</a></li>
+		    	<li><a href="#">业务展示</a></li>
+		    	<li><a href="#">最新案例</a></li>
+		    	<li><a href="#">工作动态</a></li>
+		    	<li><a href="#">联系我们</a></li>
+		    </nav>
+		</div>
+
+		<div class="warp">
+
+		<div class="inner">
+			<div class="panel" id="first_page">
+				<img src="img/first_page.png" alt="">
+			</div>
+
+			<div class="panel" style="background-color: green; color: #fff;">
+			<p>第2页</p>
+		    </div>
+		    <div class="panel" style="background-color: red; color: #fff;">
+			<p>第3页</p>
+		    </div>
+		    <div class="panel" style="background-color: blue; color: #fff;">
+			   <p>第4页</p>
+		    </div>
+
+		</div>
+
+		</div>
+
+		<div class="footer">
+			
+		</div>
+	</div>
+
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.scrollify.min.js"></script>
+<script>
+$(function() {
+	$('.panel').css({'height': $('.inner').height()});
+	$.scrollify({
+		section: '.panel',
+		target: '.inner'
+	});
+});
+</script>
+</body>
+</html>
